@@ -12,6 +12,7 @@
 <body>
     <h1 class="text-primary text-center"> Page d'accueil</h1>
     <p>Bienvenue dans notre application <strong>PHP</strong></p>
+   
 
 
 
