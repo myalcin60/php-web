@@ -1,19 +1,15 @@
 <?php
 $username = "Doe";
-if ($_POST['username'] != "") {
-    $username = $_POST['username'];
+if ($_REQUEST['username'] != "") {
+    $username = $_REQUEST['username'];
    $username=strtoupper($username[0]).substr($username,1);
-}
-$lastname = "Doe";
-if ($_POST['username'] != "") {
-    $lastname = $_POST['lastname'];
-   $lastname=strtoupper($lastname);
-}
-$age = $_POST['age'];
-$ville = $_POST['ville'];
+};
+
+$age = $_REQUEST['age'];
+$ville = $_REQUEST['ville'];
 
 $genre='Madame ';
- if(isset($_POST['genre']) and $_POST['genre']=='homme'){
+ if(isset($_REQUEST['genre']) and $_REQUEST['genre']=='homme'){
   $genre='Monsieur ' ; 
  };
 
@@ -35,7 +31,7 @@ $genre='Madame ';
     <p>
         Bonjour 
         <?php
-        echo "$genre $username, $lastname vous avez $age ans et êtes de $ville";
+        echo "$genre $username, vous avez $age ans et êtes de $ville";
         ?>
     </p>
 </body>

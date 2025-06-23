@@ -13,13 +13,10 @@
         <fieldset>
             <legend>Données de connexion</legend>
         <div>
-            <label for="username">Prenom d'utilisateur</label>
+            <label for="username">Nom d'utilisateur</label>
             <input type="text" id=username  autofocus name=username>
         </div>
-        <div>
-            <label for="lastname">Nom d'utilisateur</label>
-            <input type="text" id=lastname  autofocus name=lastname>
-        </div>
+       
         <div>
             <label for="password">Mot de passe</label>
             <input type="password" id=password name=password>
