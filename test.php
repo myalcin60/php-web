@@ -1,6 +1,6 @@
 <?php
 // démarrer la session
-session_start();
+session_start();    
 $nom_c = '';
 $nom_s = '';
 if (isset($_COOKIE['nom'])) {

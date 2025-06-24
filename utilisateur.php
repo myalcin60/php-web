@@ -1,6 +1,11 @@
 <?php
 // demarree la session
  session_start();  
+ 
+ if (!str_contains($_SERVER['HTTP_REFERER'], 'index.php') and !str_contains($_SERVER['HTTP_REFERER'], 'inscription.php')) {
+    header("location: index.php"); // redirection
+    exit(); // ne pas lire la suite
+}
 
  // var_dump($_SERVER);
 //   'REQUEST_METHOD' => string 'GET' (length=3)
