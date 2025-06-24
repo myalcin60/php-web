@@ -2,7 +2,7 @@
 // demarree la session
  session_start();  
 
- if (is_null($_SERVER['HTTP_REFERER'], 'index.php') and !str_contains($_SERVER['HTTP_REFERER'], 'inscription.php')) {
+if (is_null($_SERVER['HTTP_REFERER']) or (!str_contains($_SERVER['HTTP_REFERER'], 'index.php') and !str_contains($_SERVER['HTTP_REFERER'], 'inscription.php'))) {
     header("location: index.php"); // redirection
     exit(); // ne pas lire la suite
 }
