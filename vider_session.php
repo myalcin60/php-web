@@ -1,9 +1,9 @@
-<?php
-session_start();
-// unset($_SESSION['nom']);  // supprime la variable session nom
-session_unset();          // supprime toutes les variables session
-session_destroy();
-?>
+ <?php
+ session_start();
+ // unset($_SESSION['nom']);  // supprime la variable session nom
+ session_unset();          // supprime toutes les variables session
+ session_destroy();
+ ?>
 
 <!DOCTYPE html>
 <html lang="fr">
