@@ -28,9 +28,12 @@ if (str_contains($_SERVER['HTTP_REFERER'], 'test.php')) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookies</title>
+     <?php include './_dependances.php' ?>
+
 </head>
 
 <body>
+     <?php include "./_menu.php" ?>
     <h1>Cookies et sessions</h1>
     <h2>Cookies</h2>
     <p>Nom : <?php echo $nom_c ?></p>

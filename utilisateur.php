@@ -1,4 +1,5 @@
 <?php
+
 // demarree la session
  session_start();  
 
@@ -40,9 +41,11 @@ $_SESSION['nom'] = $username;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion d'utilisatuer</title>
+      <?php include './_dependances.php' ?>
 </head>
 
 <body>
+    <?php include "./_menu.php" ?>
     <h1>
         Gestion d'utilisatuer
     </h1>
